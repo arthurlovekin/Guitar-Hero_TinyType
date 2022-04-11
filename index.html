@@ -6,16 +6,66 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- TinyType CSS -->
-    <link rel="stylesheet" href="./style.css" type="text/css">
-    
     <title>Guitar Hero TinyType</title>
   </head>
 
   <body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- TinyType CSS (Not working for server??)-->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      :root{
+      --colWidth: 64px;
+      --fullWidth: calc(var(--colWidth) * 4);
+  
+      }
+
+      table {
+          margin: auto;
+      }
+
+      td {
+          width: var(--colWidth);
+          /* border: 1px solid #ccc; */
+          text-align: center;
+          font-size: 1.5em;
+          font-family: monospace;
+          font-weight: bold;
+          /* color: #fff; */
+          /* background-color: #000; */
+          cursor: pointer;
+      }
+
+      .btn-group {
+          margin: auto;
+      }
+
+      #message {
+          background: ghostwhite; 
+          font-size: 14px; 
+          padding: 1px; 
+          border: 1px solid lightgray; 
+          border-radius: 5px;
+          margin: auto;
+          width: var(--fullWidth);
+          min-height: 25px;
+      }
+      h1 {
+          font-size: 24px;
+          text-align: center;
+      }
+
+      #alphabet tr:nth-child(6n){
+          background-color: #cfcf96;
+      }
+
+      button {
+          width: var(--colWidth);
+      }
+  </style>
+
     <h1>Guitar Hero TinyType!</h1>
 
     <!-- A table containing 4 columns and 7 rows to store the alphabet -->
@@ -91,10 +141,10 @@
     <!-- jQuery first, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="src/guitarhero_tinytype.js"></script>
     <!-- TinyType Javascript -->
     <!-- TODO: add back in TINYTYPE namespace and move to separate file -->
-    <!-- <script src="./guitar_hero_tinytype.js"></script> -->
+
     <script>
       // Every dt milliseconds, scroll the alphabet down a letter
       setInterval(scrollAlphabet, 750);
