@@ -69,19 +69,23 @@
 
     <!-- A Text bar where the existing message is displayed -->
     <div id="message">
-      
+
     </div>
 
-</div>
     <!-- Four buttons on the bottom of the screen
     Occupying a total area under 256x256px (or under 2x2cm^2) -->
-    <div class="btn-group btn-group-sm">
-      <button type="button" class="btn btn-primary" style="width:64px" onclick="typeLetter(0)">1</button>
-      <button type="button" class="btn btn-primary" style="width:64px" onclick="typeLetter(1)">2</button>
-      <button type="button" class="btn btn-primary" style="width:64px" onclick="typeLetter(2)">3</button>
-      <button type="button" class="btn btn-primary" style="width:64px" onclick="typeLetter(3)">4</button>
-    </div>
-
+    <table>
+      <tr>
+        <td>
+          <div class="btn-group btn-group-sm">
+            <button type="button" class="btn btn-primary" style="width:64px" onclick="typeLetter(0)">1</button>
+            <button type="button" class="btn btn-primary" style="width:64px" onclick="typeLetter(1)">2</button>
+            <button type="button" class="btn btn-primary" style="width:64px" onclick="typeLetter(2)">3</button>
+            <button type="button" class="btn btn-primary" style="width:64px" onclick="typeLetter(3)">4</button>
+          </div>
+        </td>
+      </tr>
+    </table>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Bootstrap JS -->
@@ -93,7 +97,7 @@
     <!-- <script src="./guitar_hero_tinytype.js"></script> -->
     <script>
       // Every dt milliseconds, scroll the alphabet down a letter
-      setInterval(scrollAlphabet, 500);
+      setInterval(scrollAlphabet, 750);
 
       // move the bottom row of the table to the top row to simulate scrolling
       function scrollAlphabet() {

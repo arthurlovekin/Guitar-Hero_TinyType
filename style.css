@@ -1,6 +1,11 @@
 :root{
     --colWidth: 64px;
     --fullWidth: calc(var(--colWidth) * 4);
+    
+}
+
+table {
+    margin: auto;
 }
 
 td {
@@ -15,14 +20,23 @@ td {
     cursor: pointer;
 }
 
+.btn-group {
+    margin: auto;
+}
+
 #message {
     background: ghostwhite; 
     font-size: 14px; 
     padding: 1px; 
     border: 1px solid lightgray; 
     border-radius: 5px;
-    margin: 1px;
+    margin: auto;
     width: var(--fullWidth);
+    min-height: 25px;
+}
+h1 {
+    font-size: 24px;
+    text-align: center;
 }
 
 #alphabet tr:nth-child(6n){
