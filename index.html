@@ -17,7 +17,7 @@
 
     <style>
       :root{
-      --colWidth: 64px;
+      --colWidth: 50px;
       --fullWidth: calc(var(--colWidth) * 4);
   
       }
@@ -123,15 +123,15 @@
     </div>
 
     <!-- Four buttons on the bottom of the screen
-    Occupying a total area under 256x256px (or under 2x2cm^2) -->
+    Occupying a total area under 256x256px (or under 2x2cm^2) --> 
     <table>
       <tr>
         <td>
-          <div class="btn-group btn-group-sm">
-            <button type="button" class="btn btn-primary" style="width:64px" onclick="typeLetter(0)">1</button>
-            <button type="button" class="btn btn-primary" style="width:64px" onclick="typeLetter(1)">2</button>
-            <button type="button" class="btn btn-primary" style="width:64px" onclick="typeLetter(2)">3</button>
-            <button type="button" class="btn btn-primary" style="width:64px" onclick="typeLetter(3)">4</button>
+          <div class="btn-group btn-group-xs">
+            <button type="button" class="btn btn-primary" style="width:var(--colWidth); height:32px" onclick="typeLetter(0)">1</button>
+            <button type="button" class="btn btn-primary" style="width:var(--colWidth); height:32px" onclick="typeLetter(1)">2</button>
+            <button type="button" class="btn btn-primary" style="width:var(--colWidth); height:32px" onclick="typeLetter(2)">3</button>
+            <button type="button" class="btn btn-primary" style="width:var(--colWidth); height:32px" onclick="typeLetter(3)">4</button>
           </div>
         </td>
       </tr>
